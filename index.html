@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="icon" href="aset/CV.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-950 h-max">
+
+<div class="app">
+    
+    <div class="absolute -z-10 pt-[80vh] opacity-5">
+        <img src="aset/background-full.jpeg" alt="">
+    </div>
+
+    <!-- HEADER NAV -->
+    <header>
+        <div class="navbar w-full h-16 my-0 mx-auto flex items-center justify-between border-b-[1px] border-gray-500">
+            <div class="logo">
+                <a href="index.html"><img src="aset/logo_tulisan.png" alt="logo_tulis" class="w-72"></a>
+            </div>
+
+            <ul class="lg:mr-[2.5%] xl:mr-[23%] 2xl:mr-[39.3%] links gap-16 hidden sm:hidden lg:flex">
+                <li class="hover:scale-105"><a href="index.html" class="text-white text-base hover:text-orange-400">Home</a></li>
+                <li class="hover:scale-105"><a href="SEARCH LIBRARY/index.html" class="text-white text-base hover:text-orange-400">Search / Library</a></li>
+                <li class="hover:scale-105"><a href="ABOUT US/index.html" class="text-white text-base hover:text-orange-400">About Me</a></li>
+            </ul>
+
+            <div class="bars_btn mr-6">
+                <img src="aset/bars_before.png" alt="barss" class="bars">
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <ul>
+                <li class="p-3 flex align-middle justify-center hover:scale-105"><a href="index.html" class="text-white hover:text-orange-400">Home</a></li>
+                <li class="p-3 flex align-middle justify-center hover:scale-105"><a href="SEARCH LIBRARY/index.html" class="text-white hover:text-orange-400">Search / Library</a></li>
+                <li class="p-3 flex align-middle justify-center hover:scale-105"><a href="ABOUT US/index.html" class="text-white hover:text-orange-400">About Me</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <!-- SECTION SLIDER -->
+    <section>
+        <!-- sementara text white disini.. nanti diganti -->
+        <div class="slider relative text-white h-[80vh] mt-0 z-0">
+            <!-- slider image big -->
+            <div class="list">
+                <div class="item active absolute inset-0 overflow-hidden opacity-0 duration-700">
+                    <img src="aset/manga/1_adventure_Dr.Stone/dr_stone_landscape.png" class="w-full h-full object-cover">
+                    <div class="absolute w-[100%] sm:w-[100%] lg:w-[80%] h-full bottom-0 bg-gradient-to-r from-black to-transparent"></div>
+                    <div class="absolute w-full h-[40%] bottom-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                    <div class="content absolute left-[10%] top-[10%] sm:top-[10%] md:top-[15%] lg:top-[17%] xl:top-[21%] w-[500px] max-w-[80%] z-1">
+                        <img src="aset/manga/1_adventure_Dr.Stone/dr_stone_font.png" class="-ml-20 max-w-[80%]">
+                        <p class="text-lg font-semibold text-slate-200">2017 <span class="opacity-70">•</span> 26 Volumes <span class="opacity-70">•</span> 233 Chapters </p>
+                        <p class="text-base font-normal text-slate-200 opacity-80 mt-4">Earth petrified, Taiju and scientist friend Senkuu aim to restore the world. However, Tsukasa, seeking a tech-free world, opposes them. A clash ensues, shaping the fate of the rejuvenated Earth.</p>
+                        <p class="mt-4 text-base font-medium text-slate-200 mb-6">Adventure <span class="opacity-70">|</span> Award Winning <span class="opacity-70">|</span> Sci-Fi </p>
+                        <div class="grid grid-cols-2 gap-3">
+                            <a href="MANGA PAGE (individual)/1_drstone.html" class="text-slate-200 text-sm font-medium bg-white/40 backdrop-blur-sm py-3 flex justify-center border-0 outline-none rounded-md cursor-pointer max-w-[300px] hover:scale-105">Read Now</a>
+                            <a href="#" class="text-slate-200 text-sm font-medium bg-white/40 backdrop-blur-sm py-3 flex justify-center border-0 outline-none rounded-md cursor-pointer max-w-[50px] hover:scale-105"><img src="aset/plus.png" alt="" class="w-5 h-5"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item absolute inset-0 overflow-hidden opacity-0 duration-700">
+                    <img src="aset/manga/3_action_One-Piece/onePiece_landscape.webp" class="w-full h-full object-cover">
+                    <div class="absolute w-[100%] sm:w-[100%] lg:w-[80%] h-full bottom-0 bg-gradient-to-r from-black to-transparent"></div>
+                    <div class="absolute w-full h-[40%] bottom-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                    <div class="content absolute left-[10%] top-[10%] sm:top-[10%] md:top-[15%] lg:top-[17%] xl:top-[21%] w-[500px] max-w-[80%] z-1">
+                        <img src="aset/manga/3_action_One-Piece/onePiece_font.png" class="-ml-20 max-w-[80%]">
+                        <p class="text-lg font-semibold text-slate-200">1997 <span class="opacity-70">•</span> - Volumes <span class="opacity-70">•</span> - Chapters </p>
+                        <p class="text-base font-normal text-slate-200 opacity-80 mt-4">The legendary pirate Gol D. Roger reveals the existence of the treasure "One Piece" before his execution, sparking the Great Age of Pirates. Two decades later, Monkey D. Luffy, armed with a straw hat and an elastic body, sets out to find One Piece, assemble a crew, and become the new King of the Pirates.</p>
+                        <p class="mt-4 text-base font-medium text-slate-200 mb-6">Action <span class="opacity-70">|</span> Adventure <span class="opacity-70">|</span> Fantasy </p>
+                        <div class="grid grid-cols-2 gap-3">
+                            <a href="MANGA PAGE (individual)/3_onepiece.html" class="text-slate-200 text-sm font-medium bg-white/40 backdrop-blur-sm py-3 flex justify-center border-0 outline-none rounded-md cursor-pointer max-w-[300px] hover:scale-105">Read Now</a>
+                            <a href="#" class="text-slate-200 text-sm font-medium bg-white/40 backdrop-blur-sm py-3 flex justify-center border-0 outline-none rounded-md cursor-pointer max-w-[50px] hover:scale-105"><img src="aset/plus.png" alt="" class="w-5 h-5"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item absolute inset-0 overflow-hidden opacity-0 duration-700">
+                    <img src="aset/manga/6_comedy_spyXfamily/spyXfamily_landscape.jpg" class="w-full h-full object-cover">
+                    <div class="absolute w-[100%] sm:w-[100%] lg:w-[80%] h-full bottom-0 bg-gradient-to-r from-black to-transparent"></div>
+                    <div class="absolute w-full h-[40%] bottom-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                    <div class="content absolute left-[10%] top-[10%] sm:top-[10%] md:top-[15%] lg:top-[17%] xl:top-[21%] w-[500px] max-w-[80%] z-1">
+                        <img src="aset/manga/6_comedy_spyXfamily/spyXfamily_font.png" class="-ml-20 max-w-[80%] invert">
+                        <p class="text-lg font-semibold text-slate-200">2019 <span class="opacity-70">•</span> - Volumes <span class="opacity-70">•</span> - Chapters </p>
+                        <p class="text-base font-normal text-slate-200 opacity-80 mt-4">Master spy "Twilight" infiltrates Eden Academy with a faux family: orphan Anya, a mind-reading esper, and Yor Briar, an office worker and secret assassin. As they navigate their deceptive roles, the spy, assassin, and esper discover a genuine bond forming among their fabricated family.</p>
+                        <p class="mt-4 text-base font-medium text-slate-200 mb-6">Action <span class="opacity-70">|</span> Award Winning <span class="opacity-70">|</span> Comedy </p>
+                        <div class="grid grid-cols-2 gap-3">
+                            <a href="MANGA PAGE (individual)/6_spyxfamily.html" class="text-slate-200 text-sm font-medium bg-white/40 backdrop-blur-sm py-3 flex justify-center border-0 outline-none rounded-md cursor-pointer max-w-[300px] hover:scale-105">Read Now</a>
+                            <a href="#" class="text-slate-200 text-sm font-medium bg-white/40 backdrop-blur-sm py-3 flex justify-center border-0 outline-none rounded-md cursor-pointer max-w-[50px] hover:scale-105"><img src="aset/plus.png" alt="" class="w-5 h-5"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item absolute inset-0 overflow-hidden opacity-0 duration-700">
+                    <img src="aset/manga/7_fantasy_DemonSlayer/demonSlayer_landscape.webp" class="w-full h-full object-cover">
+                    <div class="absolute w-[100%] sm:w-[100%] lg:w-[80%] h-full bottom-0 bg-gradient-to-r from-black to-transparent"></div>
+                    <div class="absolute w-full h-[40%] bottom-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                    <div class="content absolute left-[10%] top-[10%] sm:top-[10%] md:top-[15%] lg:top-[17%] xl:top-[21%] w-[500px] max-w-[80%] z-1">
+                        <img src="aset/manga/7_fantasy_DemonSlayer/demonSlayer_font.png" class="-ml-20 max-w-[80%]">
+                        <p class="text-lg font-semibold text-slate-200">2016 <span class="opacity-70">•</span> 23 Volumes <span class="opacity-70">•</span> 207 Chapters </p>
+                        <p class="text-base font-normal text-slate-200 opacity-80 mt-4">Tanjirou Kamado, the eldest in his impoverished family, embarks on a fateful journey after his family is slaughtered by demons. His sister, Nezuko, is the sole survivor but has turned into a demon. Driven by despair and vengeance, Tanjirou vows to avenge his family and find a way to restore Nezuko to humanity.</p>
+                        <p class="mt-4 text-base font-medium text-slate-200 mb-6">Action <span class="opacity-70">|</span> Fantasy </p>
+                        <div class="grid grid-cols-2 gap-3">
+                            <a href="MANGA PAGE (individual)/7_demonslayer.html" class="text-slate-200 text-sm font-medium bg-white/40 backdrop-blur-sm py-3 flex justify-center border-0 outline-none rounded-md cursor-pointer max-w-[300px] hover:scale-105">Read Now</a>
+                            <a href="#" class="text-slate-200 text-sm font-medium bg-white/40 backdrop-blur-sm py-3 flex justify-center border-0 outline-none rounded-md cursor-pointer max-w-[50px] hover:scale-105"><img src="aset/plus.png" alt="" class="w-5 h-5"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item absolute inset-0 overflow-hidden opacity-0 duration-700">
+                    <img src="aset/manga/5_comedy_Nisekoi/nisekoi_landscape.jpg" class="w-full h-full object-cover">
+                    <div class="absolute w-[100%] sm:w-[100%] lg:w-[80%] h-full bottom-0 bg-gradient-to-r from-black to-transparent"></div>
+                    <div class="absolute w-full h-[40%] bottom-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                    <div class="content absolute left-[10%] top-[10%] sm:top-[10%] md:top-[15%] lg:top-[17%] xl:top-[21%] w-[500px] max-w-[80%] z-1">
+                        <img src="aset/manga/5_comedy_Nisekoi/nisekoi_font.png" class="-ml-20 max-w-[80%]">
+                        <p class="text-lg font-semibold text-slate-200">2011 <span class="opacity-70">•</span> 25 Volumes <span class="opacity-70">•</span> 229 Chapters </p>
+                        <p class="text-base font-normal text-slate-200 opacity-80 mt-4">Raku Ichijou, heir to a yakuza family, juggles a fake romance with Chitoge Kirisaki to prevent a gang war. Amid his quest to find the key to a locked pendant and fulfill a childhood promise, Raku's life becomes even more complicated as more girls connected to the pendant enter the picture.</p>
+                        <p class="mt-4 text-base font-medium text-slate-200 mb-6">Comedy <span class="opacity-70">|</span> Romance </p>
+                        <div class="grid grid-cols-2 gap-3">
+                            <a href="MANGA PAGE (individual)/5_nisekoi.html" class="text-slate-200 text-sm font-medium bg-white/40 backdrop-blur-sm py-3 flex justify-center border-0 outline-none rounded-md cursor-pointer max-w-[300px] hover:scale-105">Read Now</a>
+                            <a href="#" class="text-slate-200 text-sm font-medium bg-white/40 backdrop-blur-sm py-3 flex justify-center border-0 outline-none rounded-md cursor-pointer max-w-[50px] hover:scale-105"><img src="aset/plus.png" alt="" class="w-5 h-5"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- thumbnail mini -->
+            <div class="thumbnail">
+                <!-- click -->
+                <div class="item active">
+                    <img src="aset/manga/1_adventure_Dr.Stone/dr_stone_landscape.png">
+                </div>
+                <div class="item">
+                    <img src="aset/manga/3_action_One-Piece/onePiece_landscape.webp">
+                </div>
+                <div class="item">
+                    <img src="aset/manga/6_comedy_spyXfamily/spyXfamily_landscape.jpg">
+                </div>
+                <div class="item">
+                    <img src="aset/manga/7_fantasy_DemonSlayer/demonSlayer_landscape.webp">
+                </div>
+                <div class="item">
+                    <img src="aset/manga/5_comedy_Nisekoi/nisekoi_landscape.jpg">
+                </div>
+            </div>
+
+            <!-- untuk auto next -->
+            <button class="hidden" id="next">></button>
+        </div>
+    </section>
+
+    <!-- GENRE -->
+    <section>
+        <div class="w-full h-[100px] flex sm:justify-start lg:justify-center align-middle overflow-hidden gap-3 p-3">
+            <a href="SEARCH LIBRARY/index.html#action" class="sm:px-4 lg:px-12 my-auto py-3 rounded-md hover:scale-x-110 hover:scale-y-150 cursor-pointer bg-white/10">
+                <div class=" text-white font-bold tracking-[10px] lg:text-sm sm:text-xs text-xs">
+                ACTION
+                </div>
+            </a>
+            <a href="SEARCH LIBRARY/index.html#comedy" class="sm:px-4 lg:px-12 my-auto py-3 rounded-md hover:scale-x-110 hover:scale-y-150 cursor-pointer bg-white/10">
+                <div class=" text-white font-bold tracking-[10px] lg:text-sm sm:text-xs text-xs">
+                COMEDY
+                </div>
+            </a>
+            <a href="SEARCH LIBRARY/index.html#fantasy" class="sm:px-4 lg:px-12 my-auto py-3 rounded-md hover:scale-x-110 hover:scale-y-150 cursor-pointer bg-white/10">
+                <div class=" text-white font-bold tracking-[10px] lg:text-sm sm:text-xs text-xs">
+                FANTASY
+                </div>
+            </a>
+            <a href="SEARCH LIBRARY/index.html#adventure" class="sm:px-4 lg:px-12 my-auto py-3 rounded-md hover:scale-x-110 hover:scale-y-150 cursor-pointer bg-white/10">
+                <div class=" text-white font-bold tracking-[10px] lg:text-sm sm:text-xs text-xs">
+                ADVENTURE
+                </div>
+            </a>
+            <a href="SEARCH LIBRARY/index.html#drama" class="sm:px-4 lg:px-12 my-auto py-3 rounded-md hover:scale-x-110 hover:scale-y-150 cursor-pointer bg-white/10">
+                <div class=" text-white font-bold tracking-[10px] lg:text-sm sm:text-xs text-xs">
+                DRAMA
+                </div>
+            </a>
+            <a href="SEARCH LIBRARY/index.html#magic" class="sm:px-4 lg:px-12 my-auto py-3 rounded-md hover:scale-x-110 hover:scale-y-150 cursor-pointer bg-white/10">
+                <div class=" text-white font-bold tracking-[10px] lg:text-sm sm:text-xs text-xs">
+                MAGIC
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- TRENDING -->
+    <section>
+        <div class="flex justify-between align-top ml-[7%] mt-5 mb-[-40px] mr-[5%]">
+            <p class="text-white text-2xl tracking-wider font-semibold">Trending</p>
+            <a href="SEE MORE from home/trending.html" class="text-blue-500 mb-8 text-lg tracking-wide font-normal cursor-pointer hover:scale-110">see more</a>
+        </div>
+
+        <div id="container1" class="flex justify-center align-middle">
+            <div id="slider-container1" class="h-[400px] w-[90vw] max-w-[1600px] relative overflow-hidden p-[30px]">
+                <!-- nanti diganti <a> link aja class:slide nya -->
+                <div id="slider1" class="flex w-[1000%] h-[100%] ease-in-out duration-700">
+                    <a href="MANGA PAGE (individual)/1_drstone.html" class="slide1 grid h-[90%] w-[235px] my-auto mx-[10px] rounded-[5px] cursor-pointer hover:scale-125 hover:z-1000 ease-in-out duration-300 overflow-hidden shadow-lg shadow-black/80">
+                        <div class="poster relative overflow-hidden">
+                            <img src="aset/manga/1_adventure_Dr.Stone/dr_stone_portrait.jpg" alt="" class="w-full absolute">
+                            
+                            <div class="container-konten absolute w-[235px] h-[100%] bottom-0 hover:bg-gradient-to-t duration-300 from-black to-transparent">
+                                <div class="konten">
+                                    <img src="aset/manga/1_adventure_Dr.Stone/dr_stone_font.png" alt="" class="max-w-[70%] -ml-7">
+                                    <p class="text-base font-medium text-slate-200">26 Volumes <span class="opacity-70">•</span> 233 Chapters</p>
+                                    <div class="flex">
+                                        <img src="aset/bintang.png" alt="" class="w-5 mt-1">
+                                        <p class="pl-1 text-base font-normal text-white">4.7 / 5</p>
+                                    </div>
+                                    <!-- misal kalo gak cukup kasih... -->
+                                    <p class="text-sm font-normal text-slate-200 opacity-80 leading-5 mt-1">Earth petrified, Taiju and scientist friend Senkuu aim to restore the world. ...</p>
+                                    <p class="-mt-2">____________________________</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="MANGA PAGE (individual)/2_berserk.html" class="slide1 grid h-[90%] w-[235px] my-auto mx-[10px] rounded-[5px] cursor-pointer hover:scale-125 ease-in-out duration-300 overflow-hidden shadow-lg shadow-black/80">
+                        <div class="poster relative overflow-hidden">
+                            <img src="aset/manga/2_adventure_Berserk/Berserk_portrait.jpg" alt="" class="w-full absolute">
+                            
+                            <div class="container-konten absolute w-[235px] h-[100%] bottom-0 hover:bg-gradient-to-t from-black to-transparent">
+                                <div class="konten">
+                                    <img src="aset/manga/2_adventure_Berserk/Berserk_font.png" alt="" class="max-w-[70%] -ml-7">
+                                    <p class="text-base font-medium text-slate-200">- Volumes <span class="opacity-70">•</span> - Chapters</p>
+                                    <div class="flex">
+                                        <img src="aset/bintang.png" alt="" class="w-5 mt-1">
+                                        <p class="pl-1 text-base font-normal text-white">4.2 / 5</p>
+                                    </div>
+                                    <!-- misal kalo gak cukup kasih... -->
+                                    <p class="text-sm font-normal text-slate-200 opacity-80 leading-5 mt-1">Guts, a former mercenary turned "Black Swordsman," seeks revenge after a trusted ...</p>
+                                    <p class="-mt-2">____________________________</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="MANGA PAGE (individual)/3_onepiece.html" class="slide1 grid h-[90%] w-[235px] my-auto mx-[10px] rounded-[5px] cursor-pointer hover:scale-125 ease-in-out duration-300 overflow-hidden shadow-lg shadow-black/80">
+                        <div class="poster relative overflow-hidden">
+                            <img src="aset/manga/3_action_One-Piece/onePiece_portrait.webp" alt="" class="w-full absolute">
+                            
+                            <div class="container-konten absolute w-[235px] h-[100%] bottom-0 hover:bg-gradient-to-t from-black to-transparent">
+                                <div class="konten">
+                                    <img src="aset/manga/3_action_One-Piece/onePiece_font.png" alt="" class="max-w-[70%] -ml-7">
+                                    <p class="text-base font-medium text-slate-200">- Volumes <span class="opacity-70">•</span> - Chapters</p>
+                                    <div class="flex">
+                                        <img src="aset/bintang.png" alt="" class="w-5 mt-1">
+                                        <p class="pl-1 text-base font-normal text-white">4.5 / 5</p>
+                                    </div>
+                                    <!-- misal kalo gak cukup kasih... -->
+                                    <p class="text-sm font-normal text-slate-200 opacity-80 leading-5 mt-1">The legendary pirate Gol D. Roger reveals the existence of the treasure ...</p>
+                                    <p class="-mt-2">____________________________</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="MANGA PAGE (individual)/4_jujutsu.html" class="slide1 grid h-[90%] w-[235px] my-auto mx-[10px] rounded-[5px] cursor-pointer hover:scale-125 ease-in-out duration-300 overflow-hidden shadow-lg shadow-black/80">
+                        <div class="poster relative overflow-hidden">
+                            <img src="aset/manga/4_action_Jujutsu-Kaisen/jujutsu_portrait.png" alt="" class="w-full absolute">
+                            
+                            <div class="container-konten absolute w-[235px] h-[100%] bottom-0 hover:bg-gradient-to-t from-black to-transparent">
+                                <div class="konten">
+                                    <img src="aset/manga/4_action_Jujutsu-Kaisen/jujutsu_font.png" alt="" class="max-w-[70%] -ml-7">
+                                    <p class="text-base font-medium text-slate-200">- Volumes <span class="opacity-70">•</span> - Chapters</p>
+                                    <div class="flex">
+                                        <img src="aset/bintang.png" alt="" class="w-5 mt-1">
+                                        <p class="pl-1 text-base font-normal text-white">4.5 / 5</p>
+                                    </div>
+                                    <!-- misal kalo gak cukup kasih... -->
+                                    <p class="text-sm font-normal text-slate-200 opacity-80 leading-5 mt-1">Earth petrified, Taiju and scientist friend Senkuu aim to restore the world. ...</p>
+                                    <p class="-mt-2">____________________________</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href=" MANGA PAGE (individual)/5_nisekoi.html" class="slide1 grid h-[90%] w-[235px] my-auto mx-[10px] rounded-[5px] cursor-pointer hover:scale-125 ease-in-out duration-300 overflow-hidden shadow-lg shadow-black/80">
+                        <div class="poster relative overflow-hidden">
+                            <img src="aset/manga/5_comedy_Nisekoi/nisekoi_portrait.jpg" alt="" class="w-full absolute">
+                            
+                            <div class="container-konten absolute w-[235px] h-[100%] bottom-0 hover:bg-gradient-to-t from-black to-transparent">
+                                <div class="konten">
+                                    <img src="aset/manga/5_comedy_Nisekoi/nisekoi_font.png" alt="" class="max-w-[70%] -ml-7">
+                                    <p class="text-base font-medium text-slate-200">25 Volumes <span class="opacity-70">•</span> 229 Chapters</p>
+                                    <div class="flex">
+                                        <img src="aset/bintang.png" alt="" class="w-5 mt-1">
+                                        <p class="pl-1 text-base font-normal text-white">4.5 / 5</p>
+                                    </div>
+                                    <!-- misal kalo gak cukup kasih... -->
+                                    <p class="text-sm font-normal text-slate-200 opacity-80 leading-5 mt-1">Raku Ichijou, heir to a yakuza family, seeks a normal life. Forced into a fake romance ...</p>
+                                    <p class="-mt-2">____________________________</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href=" MANGA PAGE (individual)/6_spyxfamily.html" class="slide1 grid h-[90%] w-[235px] my-auto mx-[10px] rounded-[5px] cursor-pointer hover:scale-125 ease-in-out duration-300 overflow-hidden shadow-lg shadow-black/80">
+                        <div class="poster relative overflow-hidden">
+                            <img src="aset/manga/6_comedy_spyXfamily/spyXfamily_portrait.webp" alt="" class="w-full absolute">
+                            
+                            <div class="container-konten absolute w-[235px] h-[100%] bottom-0 hover:bg-gradient-to-t from-black to-transparent">
+                                <div class="konten">
+                                    <img src="aset/manga/6_comedy_spyXfamily/spyXfamily_font.png" alt="" class="max-w-[70%] -ml-7">
+                                    <p class="text-base font-medium text-slate-200">- Volumes <span class="opacity-70">•</span> - Chapters</p>
+                                    <div class="flex">
+                                        <img src="aset/bintang.png" alt="" class="w-5 mt-1">
+                                        <p class="pl-1 text-base font-normal text-white">5 / 5</p>
+                                    </div>
+                                    <!-- misal kalo gak cukup kasih... -->
+                                    <p class="text-sm font-normal text-slate-200 opacity-80 leading-5 mt-1">Twilight," Westalis' spy, forms a fake family to investigate an Ostanian politician. ...</p>
+                                    <p class="-mt-2">____________________________</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href=" MANGA PAGE (individual)/7_demonslayer.html" class="slide1 grid h-[90%] w-[235px] my-auto mx-[10px] rounded-[5px] cursor-pointer hover:scale-125 ease-in-out duration-300 overflow-hidden shadow-lg shadow-black/80">
+                        <div class="poster relative overflow-hidden">
+                            <img src="aset/manga/7_fantasy_DemonSlayer/demonSlayer_portrait.webp" alt="" class="w-full absolute">
+                            
+                            <div class="container-konten absolute w-[235px] h-[100%] bottom-0 hover:bg-gradient-to-t from-black to-transparent">
+                                <div class="konten">
+                                    <img src="aset/manga/7_fantasy_DemonSlayer/demonSlayer_font.png" alt="" class="max-w-[70%] -ml-7">
+                                    <p class="text-base font-medium text-slate-200">23 Volumes <span class="opacity-70">•</span> 207 Chapters</p>
+                                    <div class="flex">
+                                        <img src="aset/bintang.png" alt="" class="w-5 mt-1">
+                                        <p class="pl-1 text-base font-normal text-white">4.8 / 5</p>
+                                    </div>
+                                    <!-- misal kalo gak cukup kasih... -->
+                                    <p class="text-sm font-normal text-slate-200 opacity-80 leading-5 mt-1">Tanjirou Kamado, the eldest in his impoverished family, returns from selling ...</p>
+                                    <p class="-mt-2">____________________________</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href=" MANGA PAGE (individual)/8_bleach.html" class="slide1 grid h-[90%] w-[235px] my-auto mx-[10px] rounded-[5px] cursor-pointer hover:scale-125 ease-in-out duration-300 overflow-hidden shadow-lg shadow-black/80">
+                        <div class="poster relative overflow-hidden">
+                            <img src="aset/manga/8_fantasy_Bleach/Bleach_portrait.jpg" alt="" class="w-full absolute">
+                            
+                            <div class="container-konten absolute w-[235px] h-[100%] bottom-0 hover:bg-gradient-to-t from-black to-transparent">
+                                <div class="konten">
+                                    <img src="aset/manga/8_fantasy_Bleach/Bleach_font.png" alt="" class="max-w-[70%] -ml-7">
+                                    <p class="text-base font-medium text-slate-200">74 Volumes <span class="opacity-70">•</span> 705 Chapters</p>
+                                    <div class="flex">
+                                        <img src="aset/bintang.png" alt="" class="w-5 mt-1">
+                                        <p class="pl-1 text-base font-normal text-white">4.3 / 5</p>
+                                    </div>
+                                    <!-- misal kalo gak cukup kasih... -->
+                                    <p class="text-sm font-normal text-slate-200 opacity-80 leading-5 mt-1">High school student Ichigo Kurosaki, who can see spirits, encounters Rukia ...</p>
+                                    <p class="-mt-2">____________________________</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href=" MANGA PAGE (individual)/9_oshinoko.html" class="slide1 grid h-[90%] w-[235px] my-auto mx-[10px] rounded-[5px] cursor-pointer hover:scale-125 ease-in-out duration-300 overflow-hidden shadow-lg shadow-black/80">
+                        <div class="poster relative overflow-hidden">
+                            <img src="aset/manga/9_drama_Oshi-No-Ko/oshiNoKo_portrait.jpg" alt="" class="w-full absolute">
+                            
+                            <div class="container-konten absolute w-[235px] h-[100%] bottom-0 hover:bg-gradient-to-t from-black to-transparent">
+                                <div class="konten">
+                                    <img src="aset/manga/9_drama_Oshi-No-Ko/oshiNoKo_font.png" alt="" class="max-w-[70%] -ml-7">
+                                    <p class="text-base font-medium text-slate-200">- Volumes <span class="opacity-70">•</span> - Chapters</p>
+                                    <div class="flex">
+                                        <img src="aset/bintang.png" alt="" class="w-5 mt-1">
+                                        <p class="pl-1 text-base font-normal text-white">4.4 / 5</p>
+                                    </div>
+                                    <!-- misal kalo gak cukup kasih... -->
+                                    <p class="text-sm font-normal text-slate-200 opacity-80 leading-5 mt-1">Sixteen-year-old idol Ai Hoshino unexpectedly encounters a countryside gynecologist ...</p>
+                                    <p class="-mt-2">____________________________</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href=" MANGA PAGE (individual)/10_magi.html" class="slide1 grid h-[90%] w-[235px] my-auto mx-[10px] rounded-[5px] cursor-pointer hover:scale-125 ease-in-out duration-300 overflow-hidden shadow-lg shadow-black/80">
+                        <div class="poster relative overflow-hidden">
+                            <img src="aset/manga/10_magic_Magi/magi_portrait.jpg" alt="" class="w-full absolute">
+                            
+                            <div class="container-konten absolute w-[235px] h-[100%] bottom-0 hover:bg-gradient-to-t from-black to-transparent">
+                                <div class="konten">
+                                    <img src="aset/manga/10_magic_Magi/magi_font.png" alt="" class="max-w-[70%] -ml-7">
+                                    <p class="text-base font-medium text-slate-200">37 Volumes <span class="opacity-70">•</span> 269 Chapters</p>
+                                    <div class="flex">
+                                        <img src="aset/bintang.png" alt="" class="w-5 mt-1">
+                                        <p class="pl-1 text-base font-normal text-white">4.5 / 5</p>
+                                    </div>
+                                    <!-- misal kalo gak cukup kasih... -->
+                                    <p class="text-sm font-normal text-slate-200 opacity-80 leading-5 mt-1">Trapped for most of his life, young Magi Aladdin and his djinn Ugo embark ...</p>
+                                    <p class="-mt-2">____________________________</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <span onclick="slideRightSatu()" class="btn1 inactive absolute top-[46%] h-[40px] w-[40px] left-[8px] font-mono text-3xl text-center font-black text-white ease-out duration-500 cursor-pointer hover:rounded-full hover:scale-110 hover:bg-white/10 hover:backdrop-blur-sm "><</span>
+                
+                <span onclick="slideLeftSatu()" class="btn1 absolute top-[46%] h-[40px] w-[40px] right-[8px] font-mono text-3xl text-center font-black text-white ease-out duration-500 cursor-pointer hover:rounded-full hover:scale-110 hover:bg-white/10 hover:backdrop-blur-sm ">></span>
+            </div>
+        </div>
+
+        
+    </section>
+
+    <!-- NEW -->
+    <section>
+        <div class="flex justify-between align-top ml-[7%] mt-5 mb-[-40px] mr-[5%]">
+            <p class="text-white text-2xl tracking-wider font-semibold">New To ChronoVerse</p>
+            <a href=" SEE MORE from home/new.html" class="text-blue-500 mb-8 text-lg tracking-wide font-normal cursor-pointer hover:scale-110">see more</a>
+        </div>
+
+        <div id="container2" class="flex justify-center align-middle">
+            <div id="slider-container2" class="h-[400px] w-[90vw] max-w-[1600px] relative overflow-hidden p-[30px]">
+                <!-- nanti diganti <a> link aja class:slide nya -->
+                <div id="slider2" class="flex w-[1000%] h-[100%] ease-in-out duration-700">
+                    <a href=" MANGA PAGE (individual)/10_magi.html" class="slide2 grid h-[90%] w-[235px] my-auto mx-[10px] rounded-[5px] cursor-pointer hover:scale-125 ease-in-out duration-300 overflow-hidden shadow-lg shadow-black/80">
+                        <div class="poster relative overflow-hidden">
+                            <img src="aset/manga/10_magic_Magi/magi_portrait.jpg" alt="" class="w-full absolute">
+                            
+                            <div class="container-konten absolute w-[235px] h-[100%] bottom-0 hover:bg-gradient-to-t from-black to-transparent">
+                                <div class="konten">
+                                    <img src="aset/manga/10_magic_Magi/magi_font.png" alt="" class="max-w-[70%] -ml-7">
+                                    <p class="text-base font-medium text-slate-200">37 Volumes <span class="opacity-70">•</span> 269 Chapters</p>
+                                    <div class="flex">
+                                        <img src="aset/bintang.png" alt="" class="w-5 mt-1">
+                                        <p class="pl-1 text-base font-normal text-white">4 / 5</p>
+                                    </div>
+                                    <p class="text-sm font-normal text-slate-200 opacity-80 leading-5 mt-1">Trapped for most of his life, young Magi Aladdin and his djinn Ugo embark</p>
+                                    <p class="-mt-2">____________________________</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href=" MANGA PAGE (individual)/9_oshinoko.html" class="slide2 grid h-[90%] w-[235px] my-auto mx-[10px] rounded-[5px] cursor-pointer hover:scale-125 ease-in-out duration-300 overflow-hidden shadow-lg shadow-black/80">
+                        <div class="poster relative overflow-hidden">
+                            <img src="aset/manga/9_drama_Oshi-No-Ko/oshiNoKo_portrait.jpg" alt="" class="w-full absolute">
+                            
+                            <div class="container-konten absolute w-[235px] h-[100%] bottom-0 hover:bg-gradient-to-t from-black to-transparent">
+                                <div class="konten">
+                                    <img src="aset/manga/9_drama_Oshi-No-Ko/oshiNoKo_font.png" alt="" class="max-w-[70%] -ml-7">
+                                    <p class="text-base font-medium text-slate-200">- Volumes <span class="opacity-70">•</span> - Chapters</p>
+                                    <div class="flex">
+                                        <img src="aset/bintang.png" alt="" class="w-5 mt-1">
+                                        <p class="pl-1 text-base font-normal text-white">4 / 5</p>
+                                    </div>
+                                    <p class="text-sm font-normal text-slate-200 opacity-80 leading-5 mt-1">Sixteen-year-old idol Ai Hoshino unexpectedly encounters a countryside gynecologist</p>
+                                    <p class="-mt-2">____________________________</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href=" MANGA PAGE (individual)/8_bleach.html" class="slide2 grid h-[90%] w-[235px] my-auto mx-[10px] rounded-[5px] cursor-pointer hover:scale-125 ease-in-out duration-300 overflow-hidden shadow-lg shadow-black/80">
+                        <div class="poster relative overflow-hidden">
+                            <img src="aset/manga/8_fantasy_Bleach/Bleach_portrait.jpg" alt="" class="w-full absolute">
+                            
+                            <div class="container-konten absolute w-[235px] h-[100%] bottom-0 hover:bg-gradient-to-t from-black to-transparent">
+                                <div class="konten">
+                                    <img src="aset/manga/8_fantasy_Bleach/Bleach_font.png" alt="" class="max-w-[70%] -ml-7">
+                                    <p class="text-base font-medium text-slate-200">74 Volumes <span class="opacity-70">•</span> 705 Chapters</p>
+                                    <div class="flex">
+                                        <img src="aset/bintang.png" alt="" class="w-5 mt-1">
+                                        <p class="pl-1 text-base font-normal text-white">4 / 5</p>
+                                    </div>
+                                    <p class="text-sm font-normal text-slate-200 opacity-80 leading-5 mt-1">High school student Ichigo Kurosaki, who can see spirits, encounters Rukia ...</p>
+                                    <p class="-mt-2">____________________________</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href=" MANGA PAGE (individual)/7_demonslayer.html" class="slide2 grid h-[90%] w-[235px] my-auto mx-[10px] rounded-[5px] cursor-pointer hover:scale-125 ease-in-out duration-300 overflow-hidden shadow-lg shadow-black/80">
+                        <div class="poster relative overflow-hidden">
+                            <img src="aset/manga/7_fantasy_DemonSlayer/demonSlayer_portrait.webp" alt="" class="w-full absolute">
+                            
+                            <div class="container-konten absolute w-[235px] h-[100%] bottom-0 hover:bg-gradient-to-t from-black to-transparent">
+                                <div class="konten">
+                                    <img src="aset/manga/7_fantasy_DemonSlayer/demonSlayer_font.png" alt="" class="max-w-[70%] -ml-7">
+                                    <p class="text-base font-medium text-slate-200">23 Volumes <span class="opacity-70">•</span> 207 Chapters</p>
+                                    <div class="flex">
+                                        <img src="aset/bintang.png" alt="" class="w-5 mt-1">
+                                        <p class="pl-1 text-base font-normal text-white">4 / 5</p>
+                                    </div>
+                                    <p class="text-sm font-normal text-slate-200 opacity-80 leading-5 mt-1">Tanjirou Kamado, the eldest in his impoverished family, returns from selling ...</p>
+                                    <p class="-mt-2">____________________________</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href=" MANGA PAGE (individual)/6_spyxfamily.html" class="slide2 grid h-[90%] w-[235px] my-auto mx-[10px] rounded-[5px] cursor-pointer hover:scale-125 ease-in-out duration-300 overflow-hidden shadow-lg shadow-black/80">
+                        <div class="poster relative overflow-hidden">
+                            <img src="aset/manga/6_comedy_spyXfamily/spyXfamily_portrait.webp" alt="" class="w-full absolute">
+                            
+                            <div class="container-konten absolute w-[235px] h-[100%] bottom-0 hover:bg-gradient-to-t from-black to-transparent">
+                                <div class="konten">
+                                    <img src="aset/manga/6_comedy_spyXfamily/spyXfamily_font.png" alt="" class="max-w-[70%] -ml-7">
+                                    <p class="text-base font-medium text-slate-200">- Volumes <span class="opacity-70">•</span> - Chapters</p>
+                                    <div class="flex">
+                                        <img src="aset/bintang.png" alt="" class="w-5 mt-1">
+                                        <p class="pl-1 text-base font-normal text-white">4 / 5</p>
+                                    </div>
+                                    <p class="text-sm font-normal text-slate-200 opacity-80 leading-5 mt-1">Twilight," Westalis' spy, forms a fake family to investigate an Ostanian politician. ...</p>
+                                    <p class="-mt-2">____________________________</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href=" MANGA PAGE (individual)/5_nisekoi.html" class="slide2 grid h-[90%] w-[235px] my-auto mx-[10px] rounded-[5px] cursor-pointer hover:scale-125 ease-in-out duration-300 overflow-hidden shadow-lg shadow-black/80">
+                        <div class="poster relative overflow-hidden">
+                            <img src="aset/manga/5_comedy_Nisekoi/nisekoi_portrait.jpg" alt="" class="w-full absolute">
+                            
+                            <div class="container-konten absolute w-[235px] h-[100%] bottom-0 hover:bg-gradient-to-t from-black to-transparent">
+                                <div class="konten">
+                                    <img src="aset/manga/5_comedy_Nisekoi/nisekoi_font.png" alt="" class="max-w-[70%] -ml-7">
+                                    <p class="text-base font-medium text-slate-200">25 Volumes <span class="opacity-70">•</span> 229 Chapters</p>
+                                    <div class="flex">
+                                        <img src="aset/bintang.png" alt="" class="w-5 mt-1">
+                                        <p class="pl-1 text-base font-normal text-white">4 / 5</p>
+                                    </div>
+                                    <p class="text-sm font-normal text-slate-200 opacity-80 leading-5 mt-1">Raku Ichijou, heir to a yakuza family, seeks a normal life. Forced into a fake romance ...</p>
+                                    <p class="-mt-2">____________________________</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href=" MANGA PAGE (individual)/4_jujutsu.html" class="slide2 grid h-[90%] w-[235px] my-auto mx-[10px] rounded-[5px] cursor-pointer hover:scale-125 ease-in-out duration-300 overflow-hidden shadow-lg shadow-black/80">
+                        <div class="poster relative overflow-hidden">
+                            <img src="aset/manga/4_action_Jujutsu-Kaisen/jujutsu_portrait.png" alt="" class="w-full absolute">
+                            
+                            <div class="container-konten absolute w-[235px] h-[100%] bottom-0 hover:bg-gradient-to-t from-black to-transparent">
+                                <div class="konten">
+                                    <img src="aset/manga/4_action_Jujutsu-Kaisen/jujutsu_font.png" alt="" class="max-w-[70%] -ml-7">
+                                    <p class="text-base font-medium text-slate-200">- Volumes <span class="opacity-70">•</span> - Chapters</p>
+                                    <div class="flex">
+                                        <img src="aset/bintang.png" alt="" class="w-5 mt-1">
+                                        <p class="pl-1 text-base font-normal text-white">4 / 5</p>
+                                    </div>
+                                    <p class="text-sm font-normal text-slate-200 opacity-80 leading-5 mt-1">Earth petrified, Taiju and scientist friend Senkuu aim to restore the world. ...</p>
+                                    <p class="-mt-2">____________________________</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href=" MANGA PAGE (individual)/3_onepiece.html" class="slide2 grid h-[90%] w-[235px] my-auto mx-[10px] rounded-[5px] cursor-pointer hover:scale-125 ease-in-out duration-300 overflow-hidden shadow-lg shadow-black/80">
+                        <div class="poster relative overflow-hidden">
+                            <img src="aset/manga/3_action_One-Piece/onePiece_portrait.webp" alt="" class="w-full absolute">
+                            
+                            <div class="container-konten absolute w-[235px] h-[100%] bottom-0 hover:bg-gradient-to-t from-black to-transparent">
+                                <div class="konten">
+                                    <img src="aset/manga/3_action_One-Piece/onePiece_font.png" alt="" class="max-w-[70%] -ml-7">
+                                    <p class="text-base font-medium text-slate-200">- Volumes <span class="opacity-70">•</span> - Chapters</p>
+                                    <div class="flex">
+                                        <img src="aset/bintang.png" alt="" class="w-5 mt-1">
+                                        <p class="pl-1 text-base font-normal text-white">4 / 5</p>
+                                    </div>
+                                    <p class="text-sm font-normal text-slate-200 opacity-80 leading-5 mt-1">The legendary pirate Gol D. Roger reveals the existence of the treasure ...</p>
+                                    <p class="-mt-2">____________________________</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href=" MANGA PAGE (individual)/2_berserk.html" class="slide2 grid h-[90%] w-[235px] my-auto mx-[10px] rounded-[5px] cursor-pointer hover:scale-125 ease-in-out duration-300 overflow-hidden shadow-lg shadow-black/80">
+                        <div class="poster relative overflow-hidden">
+                            <img src="aset/manga/2_adventure_Berserk/Berserk_portrait.jpg" alt="" class="w-full absolute">
+                            
+                            <div class="container-konten absolute w-[235px] h-[100%] bottom-0 hover:bg-gradient-to-t from-black to-transparent">
+                                <div class="konten">
+                                    <img src="aset/manga/2_adventure_Berserk/Berserk_font.png" alt="" class="max-w-[70%] -ml-7">
+                                    <p class="text-base font-medium text-slate-200">- Volumes <span class="opacity-70">•</span> - Chapters</p>
+                                    <div class="flex">
+                                        <img src="aset/bintang.png" alt="" class="w-5 mt-1">
+                                        <p class="pl-1 text-base font-normal text-white">4 / 5</p>
+                                    </div>
+                                    <p class="text-sm font-normal text-slate-200 opacity-80 leading-5 mt-1">Guts, a former mercenary turned "Black Swordsman," seeks revenge after a trusted ...</p>
+                                    <p class="-mt-2">____________________________</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href=" MANGA PAGE (individual)/1_drstone.html" class="slide2 grid h-[90%] w-[235px] my-auto mx-[10px] rounded-[5px] cursor-pointer hover:scale-125 ease-in-out duration-300 overflow-hidden shadow-lg shadow-black/80">
+                        <div class="poster relative overflow-hidden">
+                            <img src="aset/manga/1_adventure_Dr.Stone/dr_stone_portrait.jpg" alt="" class="w-full absolute">
+                            
+                            <div class="container-konten absolute w-[235px] h-[100%] bottom-0 hover:bg-gradient-to-t from-black to-transparent">
+                                <div class="konten">
+                                    <img src="aset/manga/1_adventure_Dr.Stone/dr_stone_font.png" alt="" class="max-w-[70%] -ml-7">
+                                    <p class="text-base font-medium text-slate-200">26 Volumes <span class="opacity-70">•</span> 233 Chapters</p>
+                                    <div class="flex">
+                                        <img src="aset/bintang.png" alt="" class="w-5 mt-1">
+                                        <p class="pl-1 text-base font-normal text-white">4 / 5</p>
+                                    </div>
+                                    <p class="text-sm font-normal text-slate-200 opacity-80 leading-5 mt-1">Earth petrified, Taiju and scientist friend Senkuu aim to restore the world. ...</p>
+                                    <p class="-mt-2">____________________________</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <span onclick="slideRightDua()" class="btn2 inactive absolute top-[46%] h-[40px] w-[40px] left-[8px] font-mono text-3xl text-center font-black text-white ease-out duration-500 cursor-pointer hover:rounded-full hover:scale-110 hover:bg-white/10 hover:backdrop-blur-sm "><</span>
+                
+                <span onclick="slideLeftDua()" class="btn2 absolute top-[46%] h-[40px] w-[40px] right-[8px] font-mono text-3xl text-center font-black text-white ease-out duration-500 cursor-pointer hover:rounded-full hover:scale-110 hover:bg-white/10 hover:backdrop-blur-sm ">></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Most Populer -->
+    <section>
+        <div class="flex justify-between align-top ml-[7%] mt-5 mb-[-40px] mr-[5%]">
+            <p class="text-white text-2xl tracking-wider font-semibold">Most Populer</p>
+            <a href=" SEE MORE from home/populer.html" class="text-blue-500 mb-8 text-lg tracking-wide font-normal cursor-pointer hover:scale-110">see more</a>
+        </div>
+
+        <div id="container3" class="flex justify-center align-middle">
+            <div id="slider-container3" class="h-[400px] w-[90vw] max-w-[1600px] relative overflow-hidden p-[30px]">
+                <!-- nanti diganti <a> link aja class:slide nya -->
+                <div id="slider3" class="flex w-[1000%] h-[100%] ease-in-out duration-700">
+                    <a href=" MANGA PAGE (individual)/1_drstone.html" class="slide3 grid h-[90%] w-[235px] my-auto mx-[10px] rounded-[5px] cursor-pointer hover:scale-125 hover:z-1000 ease-in-out duration-300 overflow-hidden shadow-lg shadow-black/80">
+                        <div class="poster relative overflow-hidden">
+                            <img src="aset/manga/1_adventure_Dr.Stone/dr_stone_portrait.jpg" alt="" class="w-full absolute">
+                            
+                            <div class="container-konten absolute w-[235px] h-[100%] bottom-0 hover:bg-gradient-to-t duration-300 from-black to-transparent">
+                                <div class="konten">
+                                    <img src="aset/manga/1_adventure_Dr.Stone/dr_stone_font.png" alt="" class="max-w-[70%] -ml-7">
+                                    <p class="text-base font-medium text-slate-200">26 Volumes <span class="opacity-70">•</span> 233 Chapters</p>
+                                    <div class="flex">
+                                        <img src="aset/bintang.png" alt="" class="w-5 mt-1">
+                                        <p class="pl-1 text-base font-normal text-white">4.7 / 5</p>
+                                    </div>
+                                    <!-- misal kalo gak cukup kasih... -->
+                                    <p class="text-sm font-normal text-slate-200 opacity-80 leading-5 mt-1">Earth petrified, Taiju and scientist friend Senkuu aim to restore the world. ...</p>
+                                    <p class="-mt-2">____________________________</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href=" MANGA PAGE (individual)/2_berserk.html" class="slide3 grid h-[90%] w-[235px] my-auto mx-[10px] rounded-[5px] cursor-pointer hover:scale-125 ease-in-out duration-300 overflow-hidden shadow-lg shadow-black/80">
+                        <div class="poster relative overflow-hidden">
+                            <img src="aset/manga/2_adventure_Berserk/Berserk_portrait.jpg" alt="" class="w-full absolute">
+                            
+                            <div class="container-konten absolute w-[235px] h-[100%] bottom-0 hover:bg-gradient-to-t from-black to-transparent">
+                                <div class="konten">
+                                    <img src="aset/manga/2_adventure_Berserk/Berserk_font.png" alt="" class="max-w-[70%] -ml-7">
+                                    <p class="text-base font-medium text-slate-200">- Volumes <span class="opacity-70">•</span> - Chapters</p>
+                                    <div class="flex">
+                                        <img src="aset/bintang.png" alt="" class="w-5 mt-1">
+                                        <p class="pl-1 text-base font-normal text-white">4.2 / 5</p>
+                                    </div>
+                                    <!-- misal kalo gak cukup kasih... -->
+                                    <p class="text-sm font-normal text-slate-200 opacity-80 leading-5 mt-1">Guts, a former mercenary turned "Black Swordsman," seeks revenge after a trusted ...</p>
+                                    <p class="-mt-2">____________________________</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href=" MANGA PAGE (individual)/3_onepiece.html" class="slide3 grid h-[90%] w-[235px] my-auto mx-[10px] rounded-[5px] cursor-pointer hover:scale-125 ease-in-out duration-300 overflow-hidden shadow-lg shadow-black/80">
+                        <div class="poster relative overflow-hidden">
+                            <img src="aset/manga/3_action_One-Piece/onePiece_portrait.webp" alt="" class="w-full absolute">
+                            
+                            <div class="container-konten absolute w-[235px] h-[100%] bottom-0 hover:bg-gradient-to-t from-black to-transparent">
+                                <div class="konten">
+                                    <img src="aset/manga/3_action_One-Piece/onePiece_font.png" alt="" class="max-w-[70%] -ml-7">
+                                    <p class="text-base font-medium text-slate-200">- Volumes <span class="opacity-70">•</span> - Chapters</p>
+                                    <div class="flex">
+                                        <img src="aset/bintang.png" alt="" class="w-5 mt-1">
+                                        <p class="pl-1 text-base font-normal text-white">4.5 / 5</p>
+                                    </div>
+                                    <!-- misal kalo gak cukup kasih... -->
+                                    <p class="text-sm font-normal text-slate-200 opacity-80 leading-5 mt-1">The legendary pirate Gol D. Roger reveals the existence of the treasure ...</p>
+                                    <p class="-mt-2">____________________________</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href=" MANGA PAGE (individual)/4_jujutsu.html" class="slide3 grid h-[90%] w-[235px] my-auto mx-[10px] rounded-[5px] cursor-pointer hover:scale-125 ease-in-out duration-300 overflow-hidden shadow-lg shadow-black/80">
+                        <div class="poster relative overflow-hidden">
+                            <img src="aset/manga/4_action_Jujutsu-Kaisen/jujutsu_portrait.png" alt="" class="w-full absolute">
+                            
+                            <div class="container-konten absolute w-[235px] h-[100%] bottom-0 hover:bg-gradient-to-t from-black to-transparent">
+                                <div class="konten">
+                                    <img src="aset/manga/4_action_Jujutsu-Kaisen/jujutsu_font.png" alt="" class="max-w-[70%] -ml-7">
+                                    <p class="text-base font-medium text-slate-200">- Volumes <span class="opacity-70">•</span> - Chapters</p>
+                                    <div class="flex">
+                                        <img src="aset/bintang.png" alt="" class="w-5 mt-1">
+                                        <p class="pl-1 text-base font-normal text-white">4.5 / 5</p>
+                                    </div>
+                                    <!-- misal kalo gak cukup kasih... -->
+                                    <p class="text-sm font-normal text-slate-200 opacity-80 leading-5 mt-1">Earth petrified, Taiju and scientist friend Senkuu aim to restore the world. ...</p>
+                                    <p class="-mt-2">____________________________</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href=" MANGA PAGE (individual)/5_nisekoi.html" class="slide3 grid h-[90%] w-[235px] my-auto mx-[10px] rounded-[5px] cursor-pointer hover:scale-125 ease-in-out duration-300 overflow-hidden shadow-lg shadow-black/80">
+                        <div class="poster relative overflow-hidden">
+                            <img src="aset/manga/5_comedy_Nisekoi/nisekoi_portrait.jpg" alt="" class="w-full absolute">
+                            
+                            <div class="container-konten absolute w-[235px] h-[100%] bottom-0 hover:bg-gradient-to-t from-black to-transparent">
+                                <div class="konten">
+                                    <img src="aset/manga/5_comedy_Nisekoi/nisekoi_font.png" alt="" class="max-w-[70%] -ml-7">
+                                    <p class="text-base font-medium text-slate-200">25 Volumes <span class="opacity-70">•</span> 229 Chapters</p>
+                                    <div class="flex">
+                                        <img src="aset/bintang.png" alt="" class="w-5 mt-1">
+                                        <p class="pl-1 text-base font-normal text-white">4.5 / 5</p>
+                                    </div>
+                                    <!-- misal kalo gak cukup kasih... -->
+                                    <p class="text-sm font-normal text-slate-200 opacity-80 leading-5 mt-1">Raku Ichijou, heir to a yakuza family, seeks a normal life. Forced into a fake romance ...</p>
+                                    <p class="-mt-2">____________________________</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href=" MANGA PAGE (individual)/6_spyxfamily.html" class="slide3 grid h-[90%] w-[235px] my-auto mx-[10px] rounded-[5px] cursor-pointer hover:scale-125 ease-in-out duration-300 overflow-hidden shadow-lg shadow-black/80">
+                        <div class="poster relative overflow-hidden">
+                            <img src="aset/manga/6_comedy_spyXfamily/spyXfamily_portrait.webp" alt="" class="w-full absolute">
+                            
+                            <div class="container-konten absolute w-[235px] h-[100%] bottom-0 hover:bg-gradient-to-t from-black to-transparent">
+                                <div class="konten">
+                                    <img src="aset/manga/6_comedy_spyXfamily/spyXfamily_font.png" alt="" class="max-w-[70%] -ml-7">
+                                    <p class="text-base font-medium text-slate-200">- Volumes <span class="opacity-70">•</span> - Chapters</p>
+                                    <div class="flex">
+                                        <img src="aset/bintang.png" alt="" class="w-5 mt-1">
+                                        <p class="pl-1 text-base font-normal text-white">5 / 5</p>
+                                    </div>
+                                    <!-- misal kalo gak cukup kasih... -->
+                                    <p class="text-sm font-normal text-slate-200 opacity-80 leading-5 mt-1">Twilight," Westalis' spy, forms a fake family to investigate an Ostanian politician. ...</p>
+                                    <p class="-mt-2">____________________________</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href=" MANGA PAGE (individual)/7_demonslayer.html" class="slide3 grid h-[90%] w-[235px] my-auto mx-[10px] rounded-[5px] cursor-pointer hover:scale-125 ease-in-out duration-300 overflow-hidden shadow-lg shadow-black/80">
+                        <div class="poster relative overflow-hidden">
+                            <img src="aset/manga/7_fantasy_DemonSlayer/demonSlayer_portrait.webp" alt="" class="w-full absolute">
+                            
+                            <div class="container-konten absolute w-[235px] h-[100%] bottom-0 hover:bg-gradient-to-t from-black to-transparent">
+                                <div class="konten">
+                                    <img src="aset/manga/7_fantasy_DemonSlayer/demonSlayer_font.png" alt="" class="max-w-[70%] -ml-7">
+                                    <p class="text-base font-medium text-slate-200">23 Volumes <span class="opacity-70">•</span> 207 Chapters</p>
+                                    <div class="flex">
+                                        <img src="aset/bintang.png" alt="" class="w-5 mt-1">
+                                        <p class="pl-1 text-base font-normal text-white">4.8 / 5</p>
+                                    </div>
+                                    <!-- misal kalo gak cukup kasih... -->
+                                    <p class="text-sm font-normal text-slate-200 opacity-80 leading-5 mt-1">Tanjirou Kamado, the eldest in his impoverished family, returns from selling ...</p>
+                                    <p class="-mt-2">____________________________</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href=" MANGA PAGE (individual)/8_bleach.html" class="slide3 grid h-[90%] w-[235px] my-auto mx-[10px] rounded-[5px] cursor-pointer hover:scale-125 ease-in-out duration-300 overflow-hidden shadow-lg shadow-black/80">
+                        <div class="poster relative overflow-hidden">
+                            <img src="aset/manga/8_fantasy_Bleach/Bleach_portrait.jpg" alt="" class="w-full absolute">
+                            
+                            <div class="container-konten absolute w-[235px] h-[100%] bottom-0 hover:bg-gradient-to-t from-black to-transparent">
+                                <div class="konten">
+                                    <img src="aset/manga/8_fantasy_Bleach/Bleach_font.png" alt="" class="max-w-[70%] -ml-7">
+                                    <p class="text-base font-medium text-slate-200">74 Volumes <span class="opacity-70">•</span> 705 Chapters</p>
+                                    <div class="flex">
+                                        <img src="aset/bintang.png" alt="" class="w-5 mt-1">
+                                        <p class="pl-1 text-base font-normal text-white">4.3 / 5</p>
+                                    </div>
+                                    <!-- misal kalo gak cukup kasih... -->
+                                    <p class="text-sm font-normal text-slate-200 opacity-80 leading-5 mt-1">High school student Ichigo Kurosaki, who can see spirits, encounters Rukia ...</p>
+                                    <p class="-mt-2">____________________________</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href=" MANGA PAGE (individual)/9_oshinoko.html" class="slide3 grid h-[90%] w-[235px] my-auto mx-[10px] rounded-[5px] cursor-pointer hover:scale-125 ease-in-out duration-300 overflow-hidden shadow-lg shadow-black/80">
+                        <div class="poster relative overflow-hidden">
+                            <img src="aset/manga/9_drama_Oshi-No-Ko/oshiNoKo_portrait.jpg" alt="" class="w-full absolute">
+                            
+                            <div class="container-konten absolute w-[235px] h-[100%] bottom-0 hover:bg-gradient-to-t from-black to-transparent">
+                                <div class="konten">
+                                    <img src="aset/manga/9_drama_Oshi-No-Ko/oshiNoKo_font.png" alt="" class="max-w-[70%] -ml-7">
+                                    <p class="text-base font-medium text-slate-200">- Volumes <span class="opacity-70">•</span> - Chapters</p>
+                                    <div class="flex">
+                                        <img src="aset/bintang.png" alt="" class="w-5 mt-1">
+                                        <p class="pl-1 text-base font-normal text-white">4.4 / 5</p>
+                                    </div>
+                                    <!-- misal kalo gak cukup kasih... -->
+                                    <p class="text-sm font-normal text-slate-200 opacity-80 leading-5 mt-1">Sixteen-year-old idol Ai Hoshino unexpectedly encounters a countryside gynecologist ...</p>
+                                    <p class="-mt-2">____________________________</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href=" MANGA PAGE (individual)/10_magi.html" class="slide3 grid h-[90%] w-[235px] my-auto mx-[10px] rounded-[5px] cursor-pointer hover:scale-125 ease-in-out duration-300 overflow-hidden shadow-lg shadow-black/80">
+                        <div class="poster relative overflow-hidden">
+                            <img src="aset/manga/10_magic_Magi/magi_portrait.jpg" alt="" class="w-full absolute">
+                            
+                            <div class="container-konten absolute w-[235px] h-[100%] bottom-0 hover:bg-gradient-to-t from-black to-transparent">
+                                <div class="konten">
+                                    <img src="aset/manga/10_magic_Magi/magi_font.png" alt="" class="max-w-[70%] -ml-7">
+                                    <p class="text-base font-medium text-slate-200">37 Volumes <span class="opacity-70">•</span> 269 Chapters</p>
+                                    <div class="flex">
+                                        <img src="aset/bintang.png" alt="" class="w-5 mt-1">
+                                        <p class="pl-1 text-base font-normal text-white">4.5 / 5</p>
+                                    </div>
+                                    <!-- misal kalo gak cukup kasih... -->
+                                    <p class="text-sm font-normal text-slate-200 opacity-80 leading-5 mt-1">Trapped for most of his life, young Magi Aladdin and his djinn Ugo embark ...</p>
+                                    <p class="-mt-2">____________________________</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <span onclick="slideRightTiga()" class="btn3 inactive absolute top-[46%] h-[40px] w-[40px] left-[8px] font-mono text-3xl text-center font-black text-white ease-out duration-500 cursor-pointer hover:rounded-full hover:scale-110 hover:bg-white/10 hover:backdrop-blur-sm "><</span>
+                
+                <span onclick="slideLeftTiga()" class="btn3 absolute top-[46%] h-[40px] w-[40px] right-[8px] font-mono text-3xl text-center font-black text-white ease-out duration-500 cursor-pointer hover:rounded-full hover:scale-110 hover:bg-white/10 hover:backdrop-blur-sm ">></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- gradasi -->
+    <div class="relative w-full h-32 bottom-0 bg-gradient-to-t from-black to-transparent"></div>
+
+    <!-- FOOTER -->
+    <footer class="w-full h-[950px] md:h-[350px] sm:h-[950px] bg-black/80">
+        <div class="mx-24 flex text-white justify-between text-lg md:flex-row sm:flex-col flex-col">
+            <div class="pt-0 md:pt-0">
+                <div>Company</div>
+                <div class="pt-6 text-slate-300 text-base">DodowCB</div>
+                <div class="pt-3 text-slate-300 text-base">by Adeltrudo Donal</div>
+            </div>
+            <div class="pt-20 sm:pt-20 md:pt-0">
+                <div>Download</div>
+                <img src="aset/googlePlay_appStore.png" alt="" class="w-[200px] -ml-4 pt-6 opacity-85">
+            </div>
+            <div class="pt-20 sm:pt-20 md:pt-0">
+                <div>Need Help?</div>
+                <div class="pt-6 text-slate-300 text-base">Help</div>
+                <div class="pt-3 text-slate-300 text-base">Feedback</div>
+            </div>
+            <div class="pt-20 sm:pt-20 md:pt-0">
+                <div>Connect with Us</div>
+                <div class="flex justify-between pt-6 gap-6">
+                    <a href="https://www.instagram.com/aldo_2520?igsh=MTZ1bzJld2NtaWV3bw==" target="_blank"><img src="aset/instagram.png" alt="" class="w-10 h-10 hover:scale-110"></a>
+                    <a href="https://youtube.com/@aldo0193?si=zORgwa6EGCmei5nL" target="_blank"><img src="aset/youtube.png" alt="" class="w-10 h-10 hover:scale-110"></a>
+                    <a href="https://www.tiktok.com/@bwluv25?_t=8icGN0pjuhl&_r=1" target="_blank"><img src="aset/tiktok.png" alt="" class="w-10 h-10 hover:scale-110"></a>
+                    <a href="https://shorturl.at/esBD2" target="_blank"><img src="aset/whatsapp.png" alt="" class="w-10 h-10 hover:scale-110"></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-slate-400 mt-[100px] mx-24 text-sm flex">
+            © 2023 UAS Front-End Web Design iSTTS. Adeltrudo Donal. All Rights Reserved. Content subject to availability.
+        </div>
+        <pre class="text-slate-400 pt-5 md:mx-24 text-sm sm:mx-0 mx-0">Privacy Policy | Terms Of Use | Supplemental Privacy Policy</pre>
+    </footer>
+</div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+/* HEADER */
+/* bars button & dropdown menu*/
+
+.bars_btn {
+    cursor: pointer;
+}
+
+.bars {
+    width: 3rem;
+    filter: invert(100%);
+}
+
+.bars:hover {
+    scale: 1.05;
+}
+
+@media (min-width: 1024px) {
+    .bars_btn {
+        display: none;
+    }
+    .dropdown_menu {
+        display: none;
+    }
+    .opne {
+        display: none;
+    }
+}
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(108, 122, 137, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.open {
+    height: 150px;
+    display: block;
+}
+
+@media (max-width: 640px) {
+    .dropdown_menu {
+        left: 1rem;
+        right: 1rem;
+        width: unset;
+    }
+}
+
+
+/* CARD */
+
+.container-konten .konten {
+    color: white;
+    position: relative;
+    display: none;
+    bottom: -40%;
+    padding: 0 20px; 
+}
+
+.container-konten:hover .konten {
+    display: block;
+}

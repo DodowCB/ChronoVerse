@@ -1,0 +1,97 @@
+
+/* HEADER */
+/* bars button & dropdown menu*/
+
+.bars_btn {
+    cursor: pointer;
+}
+
+.bars {
+    width: 3rem;
+    filter: invert(100%);
+}
+
+.bars:hover {
+    scale: 1.05;
+}
+
+@media (min-width: 1024px) {
+    .bars_btn {
+        display: none;
+    }
+    .dropdown_menu {
+        display: none;
+    }
+    .opne {
+        display: none;
+    }
+}
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    z-index: 150;
+    right: 0;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(108, 122, 137, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.open {
+    height: 150px;
+    display: block;
+}
+
+@media (max-width: 640px) {
+    .dropdown_menu {
+        left: 1rem;
+        right: 1rem;
+        width: unset;
+    }
+}
+
+
+/* GAME */
+.abjad.terjawab {
+    border-color: transparent;
+}
+
+/* button banyak */
+.per-key > button {
+    color: white;
+    background: gray; 
+    padding: 6px 8px;
+    border-radius: 3px;
+    width: calc(100% / 10 - 5px);
+    trasition: all 200ms ease-in-out;
+}
+
+.per-key > button:hover {
+    opacity: 0.7;
+}
+
+.per-key > button:active {
+    transform: scale(0.96);
+}
+
+.per-key > button[disabled] {
+    opacity: 0.5;
+    pointer-event: none;
+}
+
+/* .per-word .abjad {
+    width: 28px;
+    border-bottom: 3px solid black;
+    text-align: center;
+} */
+
+
+/* BIODATA IMG AUTO NEXT */
+.list .item.active{
+    opacity: 1;
+    z-index: 10;
+}

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demon Slayer</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="icon" href="../aset/CV.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-950 h-max">
+
+<div class="app">
+    <div class="absolute -z-10 pt-[500px] opacity-5">
+        <img src="../aset/background-full.jpeg" alt="">
+    </div>
+    
+    <!-- HEADER NAV -->
+    <header>
+        <div class="navbar w-full h-16 my-0 mx-auto flex items-center justify-between border-b-[1px] border-gray-500">
+            <div class="logo">
+                <a href="index.html"><img src="../aset/logo_tulisan.png" alt="logo_tulis" class="w-72"></a>
+            </div>
+
+            <ul class="lg:mr-[2.5%] xl:mr-[23%] 2xl:mr-[39.3%] links gap-16 hidden sm:hidden lg:flex">
+                <li class="hover:scale-105"><a href="../index.html" class="text-white text-base hover:text-orange-400">Home</a></li>
+                <li class="hover:scale-105"><a href="../SEARCH LIBRARY/index.html" class="text-white text-base hover:text-orange-400">Search / Library</a></li>
+                <li class="hover:scale-105"><a href="../ABOUT US/index.html" class="text-white text-base hover:text-orange-400">About Me</a></li>
+            </ul>
+
+            <div class="bars_btn mr-6">
+                <img src="../aset/bars_before.png" alt="barss" class="bars">
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <ul>
+                <li class="p-3 flex align-middle justify-center hover:scale-105"><a href="../index.html" class="text-white hover:text-orange-400">Home</a></li>
+                <li class="p-3 flex align-middle justify-center hover:scale-105"><a href="../SEARCH LIBRARY/index.html" class="text-white hover:text-orange-400">Search / Library</a></li>
+                <li class="p-3 flex align-middle justify-center hover:scale-105"><a href="../ABOUT US/index.html" class="text-white hover:text-orange-400">About Me</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section>
+        <div class="slider relative text-white h-[92.24vh] mt-0 z-0">
+            <!-- slider image big -->
+            <div class="item absolute inset-0 overflow-hidden duration-700">
+                <img src="../aset/manga/7_fantasy_DemonSlayer/demonSlayer_landscape.webp" class="w-full h-full object-cover">
+                <div class="absolute w-[80%] h-full bottom-0 bg-gradient-to-r from-black to-transparent"></div>
+                <div class="absolute w-full h-[40%] bottom-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                <div class="content absolute left-[10%] top-[10%] sm:top-[10%] md:top-[15%] lg:top-[20%] xl:top-[27%] w-[500px] max-w-[80%] z-1">
+                    <img src="../aset/manga/7_fantasy_DemonSlayer/demonSlayer_font.png" class="max-w-[80%] -ml-20">
+                    <p class="text-lg font-semibold text-slate-200">2016 <span class="opacity-70">•</span> 23 Volumes <span class="opacity-70">•</span> 207 Chapters </p>
+                    <p class="text-base font-normal text-slate-200 opacity-80 mt-4">Tanjirou Kamado, the eldest in his impoverished family, returns from selling charcoal to find them brutally slaughtered by demons. His sister, Nezuko, survives but turns into a demon. Fueled by despair and hatred, Tanjirou embarks on a journey to avenge his family and find a cure for Nezuko's demonic transformation.</p>
+                    <p class="mt-4 text-base font-medium text-slate-200 mb-6">Action <span class="opacity-70">|</span> Fantasy </p>
+                    <div class="text-slate-200 text-lg font-medium bg-white/40 backdrop-blur-sm py-3 border-0 outline-none rounded-md cursor-pointer max-w-[250px] hover:scale-105">
+                        <a href="#" class="flex justify-between px-5">
+                            <p>Add to Favorite</p>
+                            <img src="../aset/plus.png" alt="" class="w-5 h-5 mt-1">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+    <div class="absolute w-full bottom-[-9%] h-[10%] bg-gradient-to-b from-black to-transparent"></div>
+
+    <section>
+        <div class="w-full mx-auto mt-5 grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-8 overflow-hidden">
+
+            <!-- CHAPTER LIST -->
+            <div class="lg:col-span-5 w-[100%] sm:w-[100%] relative overflow-hidden p-[30px] ">
+                <div class="flex justify-between align-top ml-[4%] mb-5 mr-[5%]">
+                    <p class="text-white text-xl tracking-wider font-normal">Chapter List</p>
+                </div>
+
+                <a href="#" class="per-chapter h-36 w-full grid grid-cols-10 ml-5 hover:bg-gradient-to-r from-black to-transparent py-0">
+                    <div class="picture-chapter col-span-3 flex items-center">
+                        <img src="../aset/manga/7_fantasy_DemonSlayer/7-cplist.jpg" alt="" class="lg:max-w-[250px] lg:max-h-[130px]">
+                    </div>
+
+                    <div class="col-span-4 sm:col-span-4 lg:col-span-6 my-auto ml-3">
+                        <p class="number-chapter text-white font-bold tracking-wider">#001</p>
+                        <p class="title-chapter text-slate-100 font-medium mb-6">Judul Chapter</p>
+                        <p class="date-chapter text-slate-200 font-light">25 February 2005</p>
+                    </div>
+
+                    <div class="col-span-3 sm:col-span-3 lg:col-span-1 flex items-center text-white hover:font-semibold hover:scale-105">
+                        <img src="../aset/like.png" alt="" class="w-8">
+                        <span class="ml-2">2402</span>
+                    </div>
+                </a>
+                <a href="#" class="per-chapter h-36 w-full grid grid-cols-10 ml-5 hover:bg-gradient-to-r from-black to-transparent py-0">
+                    <div class="picture-chapter col-span-3 flex items-center">
+                        <img src="../aset/manga/7_fantasy_DemonSlayer/7-cplist.jpg" alt="" class="lg:max-w-[250px] lg:max-h-[130px]">
+                    </div>
+
+                    <div class="col-span-4 sm:col-span-4 lg:col-span-6 my-auto ml-3">
+                        <p class="number-chapter text-white font-bold tracking-wider">#001</p>
+                        <p class="title-chapter text-slate-100 font-medium mb-6">Judul Chapter</p>
+                        <p class="date-chapter text-slate-200 font-light">25 February 2005</p>
+                    </div>
+
+                    <div class="col-span-3 sm:col-span-3 lg:col-span-1 flex items-center text-white hover:font-semibold hover:scale-105">
+                        <img src="../aset/like.png" alt="" class="w-8">
+                        <span class="ml-2">2425</span>
+                    </div>
+                </a>
+                <a href="#" class="per-chapter h-36 w-full grid grid-cols-10 ml-5 hover:bg-gradient-to-r from-black to-transparent py-0">
+                    <div class="picture-chapter col-span-3 flex items-center">
+                        <img src="../aset/manga/7_fantasy_DemonSlayer/7-cplist.jpg" alt="" class="lg:max-w-[250px] lg:max-h-[130px]">
+                    </div>
+
+                    <div class="col-span-4 sm:col-span-4 lg:col-span-6 my-auto ml-3">
+                        <p class="number-chapter text-white font-bold tracking-wider">#001</p>
+                        <p class="title-chapter text-slate-100 font-medium mb-6">Judul Chapter</p>
+                        <p class="date-chapter text-slate-200 font-light">25 February 2005</p>
+                    </div>
+
+                    <div class="col-span-3 sm:col-span-3 lg:col-span-1 flex items-center text-white hover:font-semibold hover:scale-105">
+                        <img src="../aset/like.png" alt="" class="w-8">
+                        <span class="ml-2">2502</span>
+                    </div>
+                </a>
+                <a href="#" class="per-chapter h-36 w-full grid grid-cols-10 ml-5 hover:bg-gradient-to-r from-black to-transparent py-0">
+                    <div class="picture-chapter col-span-3 flex items-center">
+                        <img src="../aset/manga/7_fantasy_DemonSlayer/7-cplist.jpg" alt="" class="lg:max-w-[250px] lg:max-h-[130px]">
+                    </div>
+
+                    <div class="col-span-4 sm:col-span-4 lg:col-span-6 my-auto ml-3">
+                        <p class="number-chapter text-white font-bold tracking-wider">#001</p>
+                        <p class="title-chapter text-slate-100 font-medium mb-6">Judul Chapter</p>
+                        <p class="date-chapter text-slate-200 font-light">25 February 2005</p>
+                    </div>
+
+                    <div class="col-span-3 sm:col-span-3 lg:col-span-1 flex items-center text-white hover:font-semibold hover:scale-105">
+                        <img src="../aset/like.png" alt="" class="w-8">
+                        <span class="ml-2">2402</span>
+                    </div>
+                </a>
+                <a href="#" class="per-chapter h-36 w-full grid grid-cols-10 ml-5 hover:bg-gradient-to-r from-black to-transparent py-0">
+                    <div class="picture-chapter col-span-3 flex items-center">
+                        <img src="../aset/manga/7_fantasy_DemonSlayer/7-cplist.jpg" alt="" class="lg:max-w-[250px] lg:max-h-[130px]">
+                    </div>
+
+                    <div class="col-span-4 sm:col-span-4 lg:col-span-6 my-auto ml-3">
+                        <p class="number-chapter text-white font-bold tracking-wider">#001</p>
+                        <p class="title-chapter text-slate-100 font-medium mb-6">Judul Chapter</p>
+                        <p class="date-chapter text-slate-200 font-light">25 February 2005</p>
+                    </div>
+
+                    <div class="col-span-3 sm:col-span-3 lg:col-span-1 flex items-center text-white hover:font-semibold hover:scale-105">
+                        <img src="../aset/like.png" alt="" class="w-8">
+                        <span class="ml-2">2425</span>
+                    </div>
+                </a>
+                <a href="#" class="per-chapter h-36 w-full grid grid-cols-10 ml-5 hover:bg-gradient-to-r from-black to-transparent py-0">
+                    <div class="picture-chapter col-span-3 flex items-center">
+                        <img src="../aset/manga/7_fantasy_DemonSlayer/7-cplist.jpg" alt="" class="lg:max-w-[250px] lg:max-h-[130px]">
+                    </div>
+
+                    <div class="col-span-4 sm:col-span-4 lg:col-span-6 my-auto ml-3">
+                        <p class="number-chapter text-white font-bold tracking-wider">#001</p>
+                        <p class="title-chapter text-slate-100 font-medium mb-6">Judul Chapter</p>
+                        <p class="date-chapter text-slate-200 font-light">25 February 2005</p>
+                    </div>
+
+                    <div class="col-span-3 sm:col-span-3 lg:col-span-1 flex items-center text-white hover:font-semibold hover:scale-105">
+                        <img src="../aset/like.png" alt="" class="w-8">
+                        <span class="ml-2">2502</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- <div class="text-slate-200 text-lg font-medium bg-white/40 backdrop-blur-sm py-3 border-0 outline-none rounded-md cursor-pointer max-w-[250px] hover:scale-105">
+                <a href="#" class="flex justify-between px-5">
+                    <p>Add to Favorite</p>
+                    <img src="../../aset/plus.png" alt="" class="w-5 h-5 mt-1">
+                </a>
+            </div> -->
+
+            <!-- MORE LIKE THIS -->
+            <div class="lg:col-span-3 w-[100%] sm:w-[100%] relative overflow-hidden p-[30px] lg:pl-36">
+
+                <div class="flex flex-col justify-end align-top m-12 bg-white/10 backdrop-blur-lg border-0 outline-none rounded-md pr-5 pt-5">
+                    <p class="text-white text-xl tracking-wider font-normal ml-[190px]">More Like This</p>
+                    
+                    <div id="slider-container1" class="h-[250px] w-[90vw] overflow-hidden py-[30px] ease-in-out duration-700 ml-[45px]">
+                        <a href="6_spyxfamily.html" class="slide1 grid h-[90%] w-[275px] my-auto mx-[10px] rounded-[5px] cursor-pointer hover:scale-105 hover:z-1000 ease-in-out duration-300 overflow-hidden shadow-lg shadow-black/80">
+                            <div class="poster relative overflow-hidden">
+                                <img src="../aset/manga/6_comedy_spyXfamily/spyXfamily_landscape.jpg" alt="" class="w-full absolute h-full">
+                                
+                                <div class="container-konten absolute w-[275px] h-[100%] bottom-0 hover:bg-black/80">
+                                    <div class="konten">
+                                        <img src="../aset/manga/6_comedy_spyXfamily/spyXfamily_font.png" alt="" class="w-full invert">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="slider-container1" class="h-[250px] w-[90vw] overflow-hidden py-[30px] ease-in-out duration-700 ml-[45px] -mt-14">
+                        <a href="7_demonslayer.html" class="slide1 grid h-[90%] w-[275px] my-auto mx-[10px] rounded-[5px] cursor-pointer hover:scale-105 hover:z-1000 ease-in-out duration-300 overflow-hidden shadow-lg shadow-black/80">
+                            <div class="poster relative overflow-hidden">
+                                <img src="../aset/manga/7_fantasy_DemonSlayer/demonSlayer_landscape.webp" alt="" class="w-full absolute h-full">
+                                
+                                <div class="container-konten absolute w-[275px] h-[100%] bottom-0 hover:bg-black/80">
+                                    <div class="konten">
+                                        <img src="../aset/manga/7_fantasy_DemonSlayer/demonSlayer_font.png" alt="" class="w-full">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="slider-container1" class="h-[250px] w-[90vw] overflow-hidden py-[30px] ease-in-out duration-700 ml-[45px] -mt-14">
+                        <a href="1_drstone.html" class="slide1 grid h-[90%] w-[275px] my-auto mx-[10px] rounded-[5px] cursor-pointer hover:scale-105 hover:z-1000 ease-in-out duration-300 overflow-hidden shadow-lg shadow-black/80">
+                            <div class="poster relative overflow-hidden">
+                                <img src="../aset/manga/1_adventure_Dr.Stone/dr_stone_landscape.png" alt="" class="w-full absolute h-full">
+                                
+                                <div class="container-konten absolute w-[275px] h-[100%] bottom-0 hover:bg-black/80">
+                                    <div class="konten">
+                                        <img src="../aset/manga/1_adventure_Dr.Stone/dr_stone_font.png" alt="" class="w-full">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- gradasi -->
+    <div class="relative w-full h-32 bottom-0 bg-gradient-to-t from-black to-transparent"></div>
+
+    <!-- FOOTER -->
+    <footer class="w-full h-[950px] md:h-[350px] sm:h-[950px] bg-black/80">
+        <div class="mx-24 flex text-white justify-between text-lg md:flex-row sm:flex-col flex-col">
+            <div class="pt-0 md:pt-0">
+                <div>Company</div>
+                <div class="pt-6 text-slate-300 text-base">DodowCB</div>
+                <div class="pt-3 text-slate-300 text-base">by Adeltrudo Donal</div>
+            </div>
+            <div class="pt-20 sm:pt-20 md:pt-0">
+                <div>Download</div>
+                <img src="../aset/googlePlay_appStore.png" alt="" class="w-[200px] -ml-4 pt-6 opacity-85">
+            </div>
+            <div class="pt-20 sm:pt-20 md:pt-0">
+                <div>Need Help?</div>
+                <div class="pt-6 text-slate-300 text-base">Help</div>
+                <div class="pt-3 text-slate-300 text-base">Feedback</div>
+            </div>
+            <div class="pt-20 sm:pt-20 md:pt-0">
+                <div>Connect with Us</div>
+                <div class="flex justify-between pt-6 gap-6">
+                    <a href="https://www.instagram.com/aldo_2520?igsh=MTZ1bzJld2NtaWV3bw==" target="_blank"><img src="../aset/instagram.png" alt="" class="w-10 h-10 hover:scale-110"></a>
+                    <a href="https://youtube.com/@aldo0193?si=zORgwa6EGCmei5nL" target="_blank"><img src="../aset/youtube.png" alt="" class="w-10 h-10 hover:scale-110"></a>
+                    <a href="https://www.tiktok.com/@bwluv25?_t=8icGN0pjuhl&_r=1" target="_blank"><img src="../aset/tiktok.png" alt="" class="w-10 h-10 hover:scale-110"></a>
+                    <a href="https://shorturl.at/esBD2" target="_blank"><img src="../aset/whatsapp.png" alt="" class="w-10 h-10 hover:scale-110"></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-slate-400 mt-[100px] mx-24 text-sm flex">
+            © 2023 UAS Front-End Web Design iSTTS. Adeltrudo Donal. All Rights Reserved. Content subject to availability.
+        </div>
+        <pre class="text-slate-400 pt-5 md:mx-24 text-sm sm:mx-0 mx-0">Privacy Policy | Terms Of Use | Supplemental Privacy Policy</pre>
+    </footer>
+
+</div>
+
+    <script src="app.js"></script>
+</body>
+</html>
