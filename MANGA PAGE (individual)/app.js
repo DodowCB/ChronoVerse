@@ -7,3 +7,9 @@ barsBtn.onclick = function () {
     dropDownMenu.classList.toggle('open');
     // const isOpen = dropDownMenu.classList.contains('open');
 }
+
+
+// NO PAGE
+function noPage() {
+    alert('The page does not currently exist.');
+}
