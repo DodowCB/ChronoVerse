@@ -21,7 +21,7 @@
     <header>
         <div class="navbar w-full h-16 my-0 mx-auto flex items-center justify-between border-b-[1px] border-gray-500">
             <div class="logo">
-                <a href="index.html"><img src="../aset/logo_tulisan.png" alt="logo_tulis" class="w-72"></a>
+                <a href="../index.html"><img src="../aset/logo_tulisan.png" alt="logo_tulis" class="w-72"></a>
             </div>
 
             <ul class="lg:mr-[2.5%] xl:mr-[23%] 2xl:mr-[39.3%] links gap-16 hidden sm:hidden lg:flex">
@@ -45,14 +45,15 @@
     </header>
 
     <!-- <section class="h-[90vh] w-full flex items-center justify-center flex-row">
-        <pre class="text-white text-[30px]">HALOWW.. halaman ini belom yahh :) aldo capekkkk
+        <div class="text-white text-[30px]">HALOWW.. halaman ini belom yahh :) aldo capekkkk
             intinya kenalin aku Aldo
         
-    udah kenal kan?? oke halaman ini selesai</pre>
+    udah kenal kan?? oke halaman ini selesai</div>
     </section> -->
 
     <!-- BIODATA -->
     <section class="biodata-main text-white w-full h-[100vh] overflow-hidden">
+        <!-- konsep sama kayak home page.. auto carousel -->
         <div class="list">
             <div class="item active inset-0 overflow-hidden opacity-0 duration-500 ease-out z-[-9]">
                 <img src="../aset/2_biodata.jpg" alt="" class="absolute left-[40%] sm:left-[40%] lg:left-[60%] w-[60%] sm:w-[60%] lg:w-[40%] h-[92.9vh] object-cover -z-10">
@@ -87,16 +88,16 @@
         <!-- untuk auto next -->
         <button class="hidden" id="next">></button>
         
-        <div class="container max-w-screen-xl ml-[3%] lg:ml-[15%] mx-auto pr-40 sm:pr-40 lg:pr-0 px-4 sm:px-6 lg:px-8 z-[100] pt-28">
+        <div class="container max-w-screen-xl ml-[3%] lg:ml-[15%] mx-auto pr-40 sm:pr-40 lg:pr-0 px-4 sm:px-6 lg:px-8 z-[100] pt-10 sm:pt-14 md:pt-20 lg:pt-28">
             <p class="text-2xl font-bold text-orange-400 lg:leading-[94px] lg:text-[38px] z-[100]">Hello, I'm Aldo!</p>
             <!-- nyoba typed js hehe :) -->
             <p class="text-5xl mt-1 font-bold lg:text-[88px] lg:leading-[94px] z-[100]"><span id="typed"></span></p>
 
-            <p class="mt-10 text-slate-400 w-full lg:w-1/2 lg:mt-14 pr-[20%] sm:pr-[20%] lg:pr-0 z-[100]">I am a beginner programmer with interest and expertise in the field of <b>Software Development</b>. My name is <b>Adeltrudo Donal</b>, born on February 25th in Semarang. I am currently studying at <b>iSTTS</b> and committed to continuing to learn and develop my programming skills. During my studies, I studied programming languages such as <b>Pascal</b>, <b>C++</b>, <b>Python</b>, and <b>JavaScript</b>. My experiences during my studies and in the future have given me a strong foundation in <b>Software Development</b>.</p>
+            <p class="mt-10 text-slate-400 w-full lg:w-1/2 lg:mt-14 pr-[10%] sm:pr-[10%] md:pr-[35%] lg:pr-0 z-[100]">I am a beginner programmer with interest and expertise in the field of <b>Software Development</b>. My name is <b>Adeltrudo Donal</b>, born on February 25th in Semarang. I am currently studying at <b>iSTTS</b> and committed to continuing to learn and develop my programming skills.</p>
 
-            <div class="mt-6 flex items-center gap-3 z-[100]">
-                <a href="mailto:adeltrudodonal@gmail.com?subject=Ask%20Product" target="_blank" class="bg-orange-400 text-white rounded-none py-3 px-6 text-lg font-medium mr-4 hover:opacity-80 active:scale-95 transition-all duration-200 ease-out z-[101]">Email Me</a>
-                <a href="https://www.instagram.com/aldo_2520?igsh=MTZ1bzJld2NtaWV3bw==" target="_blank" class="bg-orange-400 text-white rounded-none py-3 px-6 text-lg font-medium mr-4 hover:opacity-80 active:scale-95 transition-all duration-200 ease-out z-[101]">Follow Me</a>
+            <div class="mt-6 flex items-center gap-3 z-[100] mr-[-150px]">
+                <a href="mailto:adeltrudodonal@gmail.com?subject=Ask%20Product" target="_blank" class="bg-orange-400 text-white rounded-none py-3 px-6 lg:text-lg font-medium mr-4 hover:opacity-80 active:scale-95 transition-all duration-200 ease-out z-[101]">Email Me</a>
+                <a href="https://www.instagram.com/aldo_2520?igsh=MTZ1bzJld2NtaWV3bw==" target="_blank" class="bg-orange-400 text-white rounded-none py-3 px-6 lg:text-lg font-medium mr-4 hover:opacity-80 active:scale-95 transition-all duration-200 ease-out z-[101]">Follow Me</a>
             </div>
         </div>
 
@@ -106,34 +107,44 @@
     <!-- GAME HANGMAN -->
     <section class="flex items-center justify-center h-[130vh]">
         
+        <!-- pop up when game end. win or lose -->
         <div class="game-pop-up hidden absolute bg-black/80 h-[143vh] w-screen -top-8 justify-center items-center z-50 transition-all ease-in-out duration-300 overflow-hidden mt-[100vh]">
             <div class="content flex flex-col bg-white w-full max-w-[420px] rounded-[10px] text-center items-center py-[20px] overflow-hidden">
                 <img src="../aset/hangman/win.gif" alt="" class="max-w-[130px] mb-[20px]">
                 <p class="mb-[15px]">KOSONGAN</p>
                 <div class="flex gap-7 items-center justify-center">
                     <button class="play-again text-white bg-gray-500 py-[8px] px-[23px] rounded-[3px] hover:opacity-70" onclick="hidePopUp()">Play Again</button>
-                    <a href="https://www.youtube.com/watch?v=__djlgmUIO4" target="_blank" class="link-to-win hidden text-white bg-gray-500 py-[8px] px-[23px] rounded-[3px] hover:opacity-70" onclick="hidePopUp()">Take The Prize</a>
+                    <!-- if win, class link-to-win display:block -->
+                    <a href="https://rb.gy/dsjapa" target="_blank" class="link-to-win hidden text-white bg-gray-500 py-[8px] px-[23px] rounded-[3px] hover:opacity-70" onclick="hidePopUp()">Take The Prize</a>
                 </div>
             </div>
         </div>
 
+        <!-- in game -->
         <div id="the-game" class="container-game flex w-[1050px] mx-[5%] my-[5%] bg-white/10 backdrop-blur-lg flex-col lg:flex-row py-[50px] px-[30px] lg:py-[70px] lg:px-[40px] gap-[70px] items-center lg:items-end rounded-[10px]">
-            <div class="main-hangman mb-[20px] lg:mb-0 w-[57%]">
+
+            <!-- for the hangman img. can switch -->
+            <div class="main-hangman lg:mb-0 w-[57%] flex flex-col">
                 <p class="text-center font-bold text-3xl -mt-[20px] mb-[40px] text-orange-400">ChronoVerse Hangman</p>
                 <img src="../aset/hangman/hangman-0.png" alt="hgm" class="img-hangman max-w-[300px] invert">
             </div>
 
             <div class="word-hangman w-full">
+
+                <!-- view 'fill the blank' -->
                 <ul class="per-word flex gap-[10px] mb-10 justify-center font-bold text-xl text-white">
                     <!-- <li> diisi di app js -->
                 </ul>
 
+                <!-- hint diisi dari app js -->
                 <p class="word-hint text-lg text-center mb-[15px] font-medium text-orange-400"> hint: <b class="text-white">KOSONGAN</b></p>
                 <div class="flex justify-center mb-[15px]">
+                    <!-- live left: -->
                     <p class="incorrect-word text-center text-lg font-medium text-orange-400">left: <b class="text-red-500 ml-2">6</b></p>
                     <img src="../aset/hangman/hati.png" alt="" class="ml-1 w-[20px] h-[20px] mt-1">
                 </div>
 
+                <!-- for keyboard (following qwerty keyboard :)) -->
                 <div class="key flex flex-col justify-center items-center">
                     <div class="per-key flex justify-center items-center gap-[5px] flex-wrap w-[100%] mb-[5px]">
                         <button class="btn">Q</button>
@@ -206,7 +217,7 @@
         <div class="text-slate-400 mt-[100px] mx-24 text-sm flex">
             © 2023 UAS Front-End Web Design iSTTS. Adeltrudo Donal. All Rights Reserved. Content subject to availability.
         </div>
-        <pre class="text-slate-400 pt-5 md:mx-24 text-sm sm:mx-0 mx-0">Privacy Policy | Terms Of Use | Supplemental Privacy Policy</pre>
+        <div class="text-slate-400 pt-5 md:mx-24 text-sm sm:mx-0 mx-0">Privacy Policy | Terms Of Use | Supplemental Privacy Policy</div>
     </footer>
 
 </div>

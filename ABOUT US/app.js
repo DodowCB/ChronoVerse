@@ -10,22 +10,6 @@ barsBtn.onclick = function () {
 }
 
 
-// Read keyboard buttons
-const buttons = document.querySelectorAll('.btn');
-let klikAbjad;
-
-buttons.forEach(btn => {
-    btn.addEventListener('click', () => {
-        klikAbjad = btn.innerText;
-        // cek in console
-        console.log(klikAbjad);
-
-        checkAbjadWord(klikAbjad, btn);
-    })
-})
-//end
-
-
 // List Question
 const listQuestion = [
     {
@@ -84,6 +68,24 @@ const listQuestion = [
 //end
 
 
+// Read keyboard buttons
+const buttons = document.querySelectorAll('.btn');
+let klikAbjad;
+
+// for each btn, i put event listener.. if one of the btn clicked, disimpan di var klikAbjad
+buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        klikAbjad = btn.innerText;
+        // cek in console
+        console.log(klikAbjad);
+
+        // go check the answer
+        checkAbjadWord(klikAbjad, btn);
+    })
+})
+//end
+
+
 // deklarasi var
 const perWord = document.querySelector('.per-word');
 const showIncorrect = document.querySelector('.incorrect-word b');
@@ -100,6 +102,7 @@ const maxIncorrect = 6;
 function hidePopUp() {
     let popUpDel = document.querySelector('.game-pop-up');
 
+    // if the btn play again or take the price clicked, hide the pop-up again and reload the page to reload the game too.
     popUpDel.classList.remove('flex');
     popUpDel.classList.add('hidden');
 
@@ -111,18 +114,18 @@ function hidePopUp() {
 
 // Get one random question
 const getRandomQuestion = () => {
+    // get from listQuestion with randomize.
     const {word, wordHint} = listQuestion[Math.floor(Math.random() * listQuestion.length)];
     // Cek in console
     console.log(word, wordHint);
+
     guessedWord = word;
 
     // For hint question
     document.querySelector('.word-hint b'). innerText = wordHint;
 
-    // For Word
+    // For Word. jadi intinya word di split per karakternya ke dalam array. terus map digunakan untuk membuat fungsi dengan array baru. terus array digabungkan dengan join.
     perWord.innerHTML = word.split("").map(() => `<li class="abjad w-7 border-b-[3px] border-white text-center"></li>`).join("");
-    
-    
 }
 
 getRandomQuestion();
@@ -136,12 +139,13 @@ function checkAbjadWord(klikAbjad, btn) {
         // cek in console
         console.log(klikAbjad, "ada di dalam kata -> ", guessedWord);
 
-        // memunculkan abjad yang terjawab benar
+        // memunculkan abjad yang terjawab benar. kalo dari kata yang harus ditebak ada karakter yang benar ...
         [...guessedWord].forEach((abjad, index) => {
             if (abjad === klikAbjad) {
                 sumCorrect++;
                 console.log("sum correct: " , sumCorrect);
 
+                // ... maka posisi indexnya diisi dengan kata tadi. terus dihapus garis bawahnya
                 perWord.querySelectorAll('li')[index].innerText = abjad;
                 perWord.querySelectorAll('li')[index].classList.add('terjawab');
             }
@@ -164,10 +168,12 @@ function checkAbjadWord(klikAbjad, btn) {
     // disabled btn
     btn.disabled = true;
 
+    // game is over if live is 0 or ...
     if (sumIncorrect === maxIncorrect) {
         return results(false);
     }
 
+    // ... all char is answered
     if (sumCorrect === guessedWord.length) {
         return results(true);
     }
@@ -175,15 +181,17 @@ function checkAbjadWord(klikAbjad, btn) {
 //end
 
 
-// IF ELSE WIN
+// IF ELSE GAME IS OVER
 const results = (win) => {
     setTimeout(() => {
+        // if win true or false, the img and the msg ...
         gamePopUp.querySelector('img').src = `../aset/hangman/${win ? 'win' : 'lost'}.gif`;
         gamePopUp.querySelector('p').innerText = `${win ? 'Congrats You Win!' : 'Game Over!'}`;
 
         const colorTextPopUp = document.querySelector('.content p');
         const viewWinBtn = document.querySelector('.link-to-win');
 
+        // if win, view the take the prize btn and text blue. if lost, text red
         if (win) {
             colorTextPopUp.classList.add('text-blue-500');
 
@@ -193,12 +201,13 @@ const results = (win) => {
             colorTextPopUp.classList.add('text-red-500');
         }
 
+        // pop-up show up
         gamePopUp.classList.remove('hidden');
         gamePopUp.classList.add('flex');
     }, 400);
 }
 
-// BIODATA IMG AUTO NEXT
+// BIODATA IMG AUTO NEXT (sama kayak carousel di home page. ku copas)
 let items = document.querySelectorAll('.list .item');
 let next = document.getElementById('next');
 
